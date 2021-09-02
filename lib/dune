@@ -4,4 +4,4 @@
 (library
  (name http_server)
  (preprocess (pps sedlex.ppx))
- (libraries lwt.unix sedlex menhirLib ppx_deriving))
+ (libraries lwt.unix sedlex menhirLib ppx_deriving yaml yaml.unix))
