@@ -1,0 +1,7 @@
+(menhir
+  (modules http_parser))
+
+(library
+ (name http_server)
+ (preprocess (pps sedlex.ppx))
+ (libraries lwt.unix sedlex menhirLib ppx_deriving))
